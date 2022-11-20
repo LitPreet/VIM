@@ -1,4 +1,5 @@
 const link = document.querySelectorAll('li');
+const header = document.querySelector("header")
 const navBar = document.querySelector(".navbar")
 const cursor = document.querySelector(".cursor");
 const navBag = document.querySelector(".nav-bag");
@@ -48,6 +49,7 @@ heading2.addEventListener('mouseleave',(e)=>{
 hammburger.addEventListener("click",()=>{
     hammburger.classList.toggle("active");
     navBar.classList.toggle("black")
+    header.classList.toggle("black")
     navmenu.classList.toggle("active");
 })
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"),()=>{

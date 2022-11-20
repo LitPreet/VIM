@@ -34,6 +34,7 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  /* background-color: #dff821; */
 
 }
 .nav-ul{
@@ -132,6 +133,7 @@ height: 100vh;
   font-size: 55px;
   
 }
+
 .black
 {
   background-color: #060606;
@@ -526,7 +528,6 @@ a:hover span:nth-child(2):after {
     cursor: pointer;
 }
 .navbar{
-  /* width: 100%;  */
   width: 100vw;
   z-index: 1;
 }
@@ -631,7 +632,100 @@ border-bottom-right-radius: 50%;
 
 
 }
+
+@media  screen and (max-width:414px) {
+
+  header
+  {
+    width: 110vw;
+    /* background-color: #0037d0; */
+  }
+  
+    
+    .container
+    {
+  width: 107vw;
+    }
+    .container1
+    {
+      width: 100vw;
+    }
+  .main
+  {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  .nav-bag
+  {
+    margin-left: 70px;
+  }
+  .nav-ul
+  {
+    height: 30vh;
+    /* width: 100vw; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+    .hamburger{
+      display: block;
+      cursor: pointer;
+  }
+  .nav-item{
+    margin: 16px 0;
+    
+  }
+  
+  .h1{
+    margin-top: 14rem;
+    font-size: 30px;
+    margin-left: 4rem;
+  } 
+  .h2{
+    font-size: 30px;
+    margin-left: 9rem;
+  } 
+  .img
+  {
+    /* background-color: #dff821; */
+    width: 80vw;
+    height: 20rem;
+    border-top-right-radius:50%; 
+    border-bottom-right-radius: 50%;
+    
+  }
+  .organic
+  {
+    border-radius: 20px;
+  }
+  .text{
+    padding: 3px 0px;
+    width: 100vw;
+    justify-content: center;
+  }
+  .org1{
+    font-size: 20px;
+    width: 100vw;
+   margin-left: 3rem;
+  }
+  .org2
+  {
+    font-size: 15px;
+    width: 80vw;
+  }
+  .center{
+    margin-left: 0rem;
+    margin-right: 0;
+  
+  }
+  a{
+    font-size: 20px;
+  }
+  
+  }
+  
+
 @media  screen and (max-width:412px) {
+
 
   
   .container
@@ -669,11 +763,11 @@ width: 107vw;
 
 .h1{
   margin-top: 14rem;
-  font-size: 30px;
+  font-size: 29px;
   margin-left: 4rem;
 } 
 .h2{
-  font-size: 30px;
+  font-size: 29px;
   margin-left: 9rem;
 } 
 .img
@@ -718,10 +812,10 @@ a{
 
   .h1
   {
-    margin-left: 2rem;
+   font-size: 27px;
   }
   .h2{
-    margin-right: 7rem;
+font-size: 27px;
   }
   
 }
