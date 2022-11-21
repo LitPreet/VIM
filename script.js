@@ -9,6 +9,7 @@ const navmenu = document.querySelector(".nav-ul")
 const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
+const fenty = document.querySelector(".fenty")
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
@@ -55,4 +56,8 @@ hammburger.addEventListener("click",()=>{
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"),()=>{
     hammburger.classList.remove("active");
     navmenu.classList.remove("active")
+})
+fenty.addEventListener("mouseenter",(e)=>
+{
+    
 })

@@ -514,7 +514,130 @@ a:hover span:nth-child(2):after {
   line-height: 25px;
 }
 
+.pop-text
+{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  color: #100f0f;
+  margin-top: 5rem;
+}
+.ph-gallery
+{
+  display: flex;
+  /* background-color: #247ba0; */
+  width: 100vw;
+  height: 24rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+.fen1,.fen2,.fen3,.fen4
+{
+  border-radius: 50px;
+}
+.fen1:hover
+{
+background-image: url(./img/grid1.webp);
 
+}
+.fenty
+{
+  background-image: url(./img/grid1.1.webp);
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in;
+  
+}
+.fenty:hover{
+  background-image: url(./img/grid1.webp);
+  transform: scale(1.1);
+}
+.ilia
+{
+  background-image: url(./img/grid2.2.webp);
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in;
+}
+.ilia:hover{
+  background-image: url(./img/grid2.webp);
+  transform: scale(1.1);
+}
+.kenzoki
+{
+  background-image: url(./img/grid3.3.webp);
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in;
+}
+.kenzoki:hover{
+  background-image: url(./img/grid3.webp);
+  transform: scale(1.1);
+}
+.pixi
+{
+  background-image: url(./img/grid4.4.webp);
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in;
+}
+.pixi:hover{
+  background-image: url(./img/grid4.webp);
+  transform: scale(1.1);
+}
+.fen-text
+{
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+.fen-star
+{
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.grid1
+{
+ width: 280px;
+ margin: 0px 10px;
+
+}
+.grid2
+{
+  width: 280px;
+  margin: 0px 10px;
+ 
+}
+.grid3
+{
+  width: 280px;
+  margin: 0 10px;
+ 
+}
+.grid4
+{
+  width: 280px;
+  margin: 0px 10px;
+ 
+}
 
 
 @media screen and (max-width:768px){
@@ -629,7 +752,15 @@ border-bottom-right-radius: 50%;
   justify-content: center;
   padding: 50px 50px;
 }
+.ph-gallery
+{
+  margin-left: 6rem;
+}
+.fen-star
+  {
 
+    margin-bottom: 10px;
+  }
 
 }
 
@@ -720,7 +851,19 @@ border-bottom-right-radius: 50%;
   a{
     font-size: 20px;
   }
-  
+  .ph-gallery
+  {
+    margin-left: 4rem;
+  }
+  .fen-text
+  {
+    margin-top: 15px;
+  }
+  .fen-star
+  {
+
+    margin-bottom: 10px;
+  }
   }
   
 
