@@ -1,15 +1,15 @@
-const link = document.querySelectorAll('li');
-const header = document.querySelector("header")
-const navBar = document.querySelector(".navbar")
+// const navItem = document.getElementsByClassName(".nav-item")
+const header = document.querySelector("header");
+const navBar = document.querySelector(".navbar");
 const cursor = document.querySelector(".cursor");
 const navBag = document.querySelector(".nav-bag");
 const hammburger = document.querySelector(".hamburger");
-const navmenu = document.querySelector(".nav-ul")
-// const navItem = document.(".nav-item");
+const navmenu = document.querySelector(".nav-ul");
 const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
-const fenty = document.querySelector(".fenty")
+const fenty = document.querySelector(".fenty");
+
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
@@ -47,17 +47,14 @@ heading2.addEventListener('mouseleave',(e)=>{
 
 
 
-hammburger.addEventListener("click",()=>{
+hammburger.addEventListener("click",(e)=>{
     hammburger.classList.toggle("active");
     navBar.classList.toggle("black")
     header.classList.toggle("black")
     navmenu.classList.toggle("active");
+    document.body.classList.toggle('fixed-position');
 })
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"),()=>{
-    hammburger.classList.remove("active");
-    navmenu.classList.remove("active")
-})
-fenty.addEventListener("mouseenter",(e)=>
-{
-    
-})
+// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"),()=>{
+//     hammburger.classList.remove("active");
+//     navmenu.classList.remove("active")
+// })
