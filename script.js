@@ -1,10 +1,11 @@
-// const navItem = document.getElementsByClassName(".nav-item")
+
 const header = document.querySelector("header");
 const navBar = document.querySelector(".navbar");
 const cursor = document.querySelector(".cursor");
 const navBag = document.querySelector(".nav-bag");
 const hammburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".nav-ul");
+const navItem = document.querySelectorAll(".nav-item")
 const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
@@ -28,22 +29,33 @@ navBag.addEventListener("mouseenter", (e) => {
 navBag.addEventListener("mouseleave", (e) => {
     cursor.classList.remove("hover")
 })
-// heading.addEventListener('mouseenter',(e)=>{
-//     cursor.classList.add("circle")
-//     cursor.classList.add("hover1")
-// })
-// heading.addEventListener('mouseleave',(e)=>{
-//     cursor.classList.remove("circle")
-//     cursor.classList.remove("hover1")
-// })
-// heading2.addEventListener('mouseenter',(e)=>{
-//     cursor.classList.add("circle")
-//     cursor.classList.add("hover1")
-// })
-// heading2.addEventListener('mouseleave',(e)=>{
-//     cursor.classList.remove("circle")
-//     cursor.classList.remove("hover1")
-// })
+heading.addEventListener('mouseenter',(e)=>{
+    cursor.classList.add("circle")
+    cursor.classList.add("hover1")
+})
+heading.addEventListener('mouseleave',(e)=>{
+    cursor.classList.remove("circle")
+    cursor.classList.remove("hover1")
+})
+heading2.addEventListener('mouseenter',(e)=>{
+    cursor.classList.add("circle")
+    cursor.classList.add("hover1")
+})
+heading2.addEventListener('mouseleave',(e)=>{
+    cursor.classList.remove("circle")
+    cursor.classList.remove("hover1")
+})
+navItem.forEach(box => {
+    box.addEventListener('mouseenter', (e)=>{
+     cursor.classList.add("hover");
+    });
+  });
+  navItem.forEach(box => {
+    box.addEventListener('mouseleave', (e)=>{
+     cursor.classList.remove("hover");
+    });
+  });
+
 
 
 

@@ -98,9 +98,7 @@ header {
 }
 
 
-.navbar ul li:hover~.cursor {
-  transform: scale(4);
-}
+
 
 
 .hamburger {
