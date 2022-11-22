@@ -28,22 +28,22 @@ navBag.addEventListener("mouseenter", (e) => {
 navBag.addEventListener("mouseleave", (e) => {
     cursor.classList.remove("hover")
 })
-heading.addEventListener('mouseenter',(e)=>{
-    cursor.classList.add("circle")
-    cursor.classList.add("hover1")
-})
-heading.addEventListener('mouseleave',(e)=>{
-    cursor.classList.remove("circle")
-    cursor.classList.remove("hover1")
-})
-heading2.addEventListener('mouseenter',(e)=>{
-    cursor.classList.add("circle")
-    cursor.classList.add("hover1")
-})
-heading2.addEventListener('mouseleave',(e)=>{
-    cursor.classList.remove("circle")
-    cursor.classList.remove("hover1")
-})
+// heading.addEventListener('mouseenter',(e)=>{
+//     cursor.classList.add("circle")
+//     cursor.classList.add("hover1")
+// })
+// heading.addEventListener('mouseleave',(e)=>{
+//     cursor.classList.remove("circle")
+//     cursor.classList.remove("hover1")
+// })
+// heading2.addEventListener('mouseenter',(e)=>{
+//     cursor.classList.add("circle")
+//     cursor.classList.add("hover1")
+// })
+// heading2.addEventListener('mouseleave',(e)=>{
+//     cursor.classList.remove("circle")
+//     cursor.classList.remove("hover1")
+// })
 
 
 
