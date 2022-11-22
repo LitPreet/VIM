@@ -989,8 +989,9 @@ overflow: hidden;
 
 @media screen and (max-width:375px) {
   .nav-ul {
-    height: 39%;
+    height: 40%;
     width: 335px;
+    /* background-color: #0084ff; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -1007,21 +1008,11 @@ overflow: hidden;
   {
     margin-top: 0px;
   }
-  .ph-gallery
-  {
-    margin-left: 3rem;
-  }
-  /* .h1 {
-    font-size: 27px;
-  }
-
-  .h2 {
-    font-size: 27px;
-  } */
+ 
   .ph-gallery
   {
     /* background-color: #dff821; */
-    margin-left: 2rem;
+    margin-left: 2.2rem;
   }
 
 }
