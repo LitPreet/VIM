@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIM</title>
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="main">
+    <div class="container" data-scroll-container="">
+        <div class="main" data-scroll="" data-scroll-delay="0.28">
             <div class="container1">
                 <ul class="particles">
                     <li><img src="./img/nail-polish.png" width="20"></li>
@@ -30,7 +31,7 @@
                     <li></li>
                     <li></li>
                     <li></li>
-                    
+
                 </ul>
                 <header>
                     <nav class="navbar">
@@ -43,27 +44,30 @@
                             <!-- <div class="cursor"></div> -->
                         </ul>
                         <span class="nav-bag"><img src="./img/icons8-paper-bag-64.png" width="25"></span>
-                        <div class="hamburger">
+                        <div class="hamburger" class="lerp-wrap" data-scroll="">
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
                     </nav>
                 </header>
+               
                 <div class="cursor"></div>
-                <div class="heading">
-                    <p class="h1">Beauty & Cosmetics</p>
-                    <p class="h2">Products</p>
+                <div class="heading" class="lerp-wrap" data-scroll="">
+                    <p class="h1" data-scroll="" data-scroll-delay="0.28" data-scroll-speed="2">Beauty & Cosmetics</p>
+                    <p class="h2" data-scroll="" data-scroll-delay="0.28" data-scroll-speed="2">Products</p>
                 </div>
-                
+               
+
             </div>
           
-        
+
+
         </div>
         <!-- main end -->
         <!-- second box start -->
         <div class="mid">
             <div class="img">
-                <img src="./img/organic.webp" class="organic">
+                <img src="./img/organic.webp" class="organic" class="thumbnail">
             </div>
             <div class="text">
                 <p class="org1">Made Only With Organic Materials</p>
@@ -90,26 +94,46 @@
             </div>
             <div class="grid2">
                 <div class="ilia">
-                   
+
                 </div>
                 <p class="fen-text">Ilia</p>
                 <p class="fen-star">⭐⭐⭐⭐⭐ <span>43.65$</span></p>
             </div>
             <div class="grid3">
                 <div class="kenzoki">
-                   
+
                 </div>
                 <p class="fen-text">Kenzoki Hydaration</p>
                 <p class="fen-star">⭐⭐⭐⭐⭐ <span>38.05$</span></p>
             </div>
             <div class="grid4">
                 <div class="pixi">
-                
+
                 </div>
                 <p class="fen-text">Pixi</p>
                 <p class="fen-star">⭐⭐⭐⭐⭐ <span>37.85$</span></p>
             </div>
         </div>
+
+
+        <!-- third box -->
+        <div class="mid">
+
+            <div class="text">
+                <p class="org1">Be Extra Without Paying Extra</p>
+                <p class="org2">With us, you'll get quality products at realistic prices. Your feedback and reviews
+                    guide everything we do get the best without killing wallet.
+                </p>
+                <!-- <button class="org-btn">Browse Products</button> -->
+                <div class="center">
+                    <button class="button-56" role="button">Browse Products</button>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="./img/be-extra.webp" class="organic2">
+            </div>
+        </div>
+        <!-- third box end -->
     </div>
     <!-- container end -->
 
@@ -118,6 +142,8 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
     <script src="./script.js"></script>
 
 </body>

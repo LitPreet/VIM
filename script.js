@@ -10,6 +10,26 @@ const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
 const fenty = document.querySelector(".fenty");
+const Locoscroll = new LocomotiveScroll({
+    el:document.querySelector("[data-scroll-container]"),
+    smooth:true,
+    smartphone:{
+     smooth:true
+    }
+ });
+ var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
+ const parallax = document.getElementById("parallax");
+
+// Parallax Effect for DIV 1
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.8 + "px";
+  // DIV 1 background will move slower than other elements on scroll.
+});
 
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
@@ -30,6 +50,7 @@ navBag.addEventListener("mouseleave", (e) => {
     cursor.classList.remove("hover")
 })
 heading.addEventListener('mouseenter',(e)=>{
+    console.log("hii")
     cursor.classList.add("circle")
     cursor.classList.add("hover1")
 })
