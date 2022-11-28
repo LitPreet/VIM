@@ -10,22 +10,22 @@ const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
 const fenty = document.querySelector(".fenty");
-// const Locoscroll = new LocomotiveScroll({
-//     el:document.querySelector("[data-scroll-container]"),
-//     smooth:true,
-//     smartphone:{
-//      smooth:true
-//     }
-//  });
+const Locoscroll = new LocomotiveScroll({
+    el:document.querySelector("[data-scroll-container]"),
+    smooth:true,
+    smartphone:{
+     smooth:true
+    }
+ });
 
-//  const parallax = document.getElementById("parallax");
+ const parallax = document.getElementById("parallax");
 
 // Parallax Effect for DIV 1
-// window.addEventListener("scroll", function () {
-//   let offset = window.pageYOffset;
-//   parallax.style.backgroundPositionY = offset * 0.8 + "px";
-  // DIV 1 background will move slower than other elements on scroll.
-// });
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.8 + "px";
+//   DIV 1 background will move slower than other elements on scroll.
+});
 
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';

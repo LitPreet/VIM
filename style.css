@@ -16,6 +16,148 @@ body {
 }
 
 
+
+.main {
+  background-image: url(./img/home-cover.webp);
+  /* background-color: #247ba0; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+  height: 100%;
+
+
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+
+
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  /* background-color: #dff821; */
+
+}
+.container1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  /* background-color: #0037d0; */
+}
+.nav-ul {
+  display: flex;
+}
+
+.nav-logo {
+  margin: 0 50px;
+  font-size: 34px;
+  font-family: 'Yeseva One';
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+
+}
+
+.nav-bag {
+  margin-right: 4rem;
+  margin-top: 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  transition: 0.1s;
+  transform-origin: 100% 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: 0.1s;
+}
+
+
+.hamburger {
+  margin-right: 50px;
+  margin-top: 10px;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.h1 {
+  margin-top: 12rem;
+  font-size: 55px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+}
+
+.black {
+  background-color: #060606;
+}
+
+.hover {
+  transform: scale(5);
+}
+
+.hover1 {
+  transform: scale(10);
+  /* background-color: #ff1493; */
+  background-color: rgb(6, 2, 17);
+ 
+}
+
+.scale-cursor {
+  background: white;
+}
+
+
 .mid {
   margin-top: 3rem;
   display: flex;
@@ -170,11 +312,6 @@ body {
   outline: 0;
 }
 
-@media (min-width: 768px) {
-  .button-56 {
-    padding: 0 40px;
-  }
-}
 
 .text {
   width: 70vw;
@@ -200,6 +337,10 @@ body {
   color: grey;
   margin-top: 1rem;
   line-height: 25px;
+}
+.org3
+{
+  text-align: center;
 }
 
 .pop-text {
@@ -338,61 +479,169 @@ overflow: hidden;
 
 .fifth
 {
+  margin-top: 5rem;
   width: 80%;
-  background-color: #0084ff;
+  /* background-color: #0084ff; */
   height: 30rem;
   border-radius: 50%;
-  margin: auto;
+  margin-left: 20vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   position: relative;
+     /*enable 3D rendering*/
+     /* transform: translateZ(0);
+     will-change: transform; */
+     
+    
 }
 
 .f1
 {
   margin: 0;
   font-size: 50px;
+  font-weight: 500;
 }
 .f2
 {
   margin: 0;
   font-size: 50px;
+  font-weight: 500;
 }
 .cos1
 {
   position: absolute;
-  left: 40px;
+  left: 4rem;  
+  top: 12rem;
+  width: 70px;
 }
 .cos2
 {
   position: absolute;
-  left: 8rem;
+  left: 17rem;
   top: 3rem;
+  width: 70px;
 }
 .cos3
 {
   position: absolute;
-  left: 27rem;
+  left: 45rem;
   top: 3rem;
+  width: 70px;
 }
 .cos4
 {
   position: absolute;
-  left: 3rem;
+  left: 17rem;
+  top: 23rem;
+  width: 70px;
 }
 .cos5
 {
   position: absolute;
-  left: 3rem;
+  left: 56rem;
+  width: 70px;
 }
 .cos6
 {
   position: absolute;
-  left: 3rem;
+  left: 45rem;
+  top: 23rem;
+  width: 70px;
 }
 
+  /* button animation  */
+  .center {
+    margin-top: 3rem;
+    margin-right: 15rem;
+  }
+  
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  a span {
+    padding: 15px;
+    transition: .5s;
+    position: relative;
+  }
+  
+  a span:nth-child(1) {
+    color: #fff;
+    background: #262626;
+  }
+  
+  a span:nth-child(2) {
+    color: #fff;
+    background: #f9b8d7;
+  }
+  
+  a span:nth-child(1):before {
+    content: attr(data-attr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    padding: 15px;
+    transition: 0.5S;
+    transform-origin: top;
+    transform: rotateX(90deg) translateY(-50%);
+  }
+  
+  a:hover span:nth-child(1):before {
+    transform: rotateX(0deg) translateY(0%);
+  }
+  
+  a span:nth-child(2):before {
+    content: attr(data-attr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0084ff;
+    padding: 15px;
+    transition: 0.5S;
+    transform-origin: bottom;
+    transform: rotateX(90deg) translateY(50%);
+  }
+  
+  a:hover span:nth-child(2):before {
+    transform: rotateX(0deg) translateY(0%);
+  }
+  
+  a span:nth-child(1):after {
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0084ff;
+    transform-origin: bottom;
+    transform: rotateX(0deg) translateY(0%);
+    transition: 0.5s;
+  }
+  
+  a:hover span:nth-child(1):after {
+    transform: rotateX(90deg) translateY(50%);
+  }
+  
+  a span:nth-child(2):after {
+    content: attr(data-attr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    padding: 15px;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: rotateX(0deg) translateY(0%);
+  }
+  
+  a:hover span:nth-child(2):after {
+    transform: rotateX(90deg) translateY(-50%);
+  }
 
 @media screen and (max-width:768px) {
   /* .container {
@@ -404,6 +653,9 @@ overflow: hidden;
     width: 100%;
 
   } */
+  .button-56 {
+    padding: 0 40px;
+  }
 
   .hamburger {
     display: block;
@@ -547,7 +799,42 @@ overflow: hidden;
 
     margin-bottom: 10px;
   }
-
+  .fifth
+  {
+    margin-top: 2rem;
+    margin-left: 12vw;
+  }
+  .cos1 {
+    
+    left: 0rem;
+    top: 12rem;
+    width: 65px;
+  }
+  .cos2
+  {
+    left: 8rem;
+    width: 65px;
+  }
+  .cos3{
+    left: 8rem;
+    top: 23rem;
+    width: 65px;
+  }
+  .cos4
+  {
+    left: 23rem;
+    top: 3rem;
+    width: 65px;
+  }
+  .cos5{
+    left: 34rem;
+    
+    width: 65px;
+  }
+  .cos6
+  {
+    left: 23rem;
+  }
 }
 
 @media screen and (max-width:414px) {
@@ -670,6 +957,58 @@ overflow: hidden;
 
     margin-bottom: 10px;
   }
+  .fifth
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 0;
+    /* background-color: #0084ff; */
+    height: 19rem;
+  }
+  .f1,.f2
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .cos1
+  {
+    width: 40px;
+    top: 8rem;
+    left: 2rem;
+    
+  }
+  .cos2{
+    width: 40px;
+    left: 6rem;
+    top: 3rem;
+  }
+  .cos3
+  {
+    width: 40px;
+    left: 6rem;
+    top: 13rem;
+  }
+  .cos4
+  {
+    width: 40px;
+    left: 16rem;
+    top: 3rem;
+  }
+  .cos5
+  {
+    width: 40px;
+    left: 20rem;
+  }
+  .cos6{
+    width: 40px;
+    left: 16rem;
+    top: 13rem;
+  }
 }
 
 
@@ -778,6 +1117,58 @@ overflow: hidden;
     /* text-align: center; */
     margin-left: 3.7rem;
   }
+  .fifth
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 0;
+    /* background-color: #0084ff; */
+    height: 19rem;
+  }
+  .f1,.f2
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .cos1
+  {
+    width: 40px;
+    top: 8rem;
+    left: 2rem;
+    
+  }
+  .cos2{
+    width: 40px;
+    left: 6rem;
+    top: 3rem;
+  }
+  .cos3
+  {
+    width: 40px;
+    left: 6rem;
+    top: 13rem;
+  }
+  .cos4
+  {
+    width: 40px;
+    left: 16rem;
+    top: 3rem;
+  }
+  .cos5
+  {
+    width: 40px;
+    left: 20rem;
+  }
+  .cos6{
+    width: 40px;
+    left: 16rem;
+    top: 13rem;
+  }
 
 }
 
@@ -788,6 +1179,7 @@ overflow: hidden;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+
   .nav-logo
   {
     margin-left: 15px;
