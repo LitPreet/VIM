@@ -8,6 +8,7 @@ body {
   padding: 0;
   overflow-x: hidden; 
   box-sizing: border-box;
+  overflow-y:auto;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
   background-size: cover;
   /* width: 100%; */
   height: 100%;
-
 
 }
 
@@ -70,6 +70,8 @@ header {
   margin-top: 10px;
   margin-right: 20px;
   margin-left: 20px;
+  /* background-color: #0084ff; */
+  transition: 0.8s ease-in;
 
 
 }
@@ -77,8 +79,9 @@ header {
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
+ 
 
 }
 
@@ -127,6 +130,7 @@ header {
   color: #fff;
   text-align: center;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .h2 {
@@ -136,6 +140,7 @@ header {
   color: #fff;
   font-size: 55px;
   text-align: center;
+  cursor: pointer;
 }
 
 .black {
@@ -144,12 +149,18 @@ header {
 
 .hover {
   transform: scale(5);
+  transition: 0.2s all;
+  cursor: pointer;
+  transform-origin: center;
 }
 
 .hover1 {
-  transform: scale(10);
+  transform: scale(15);
   /* background-color: #ff1493; */
-  background-color: rgb(6, 2, 17);
+  background-color: rgb(245, 99, 172);
+  mix-blend-mode: color-burn;
+  transition: 0.2s ease;
+  transform-origin: center;
  
 }
 
@@ -481,7 +492,6 @@ overflow: hidden;
 {
   margin-top: 5rem;
   width: 80%;
-  /* background-color: #0084ff; */
   height: 30rem;
   border-radius: 50%;
   margin-left: 20vh;
@@ -490,9 +500,6 @@ overflow: hidden;
   flex-direction: column;
   align-items: center;
   position: relative;
-     /*enable 3D rendering*/
-     /* transform: translateZ(0);
-     will-change: transform; */
      
     
 }
@@ -643,16 +650,108 @@ overflow: hidden;
     transform: rotateX(90deg) translateY(-50%);
   }
 
-@media screen and (max-width:768px) {
-  /* .container {
-    width: 100%;
-
+  .six
+  {
+    /* background-color: #f9b8d7; */
+    width: 100vw;
+    display: flex;
+    height: 30rem;
+    padding: 0 30px;
+    margin-top: 3.8rem;
+    
+  }
+  .hand1
+  {
+    width: 180px;
+    transition: 0.8s ease-in-out;
+  }
+  .hand2
+  {
+    width: 80px;
+  }
+  .flex1
+  {
+    
+    width: 400px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   
+  }
+  .flex1:hover
+  {
+    transition: 0.5s all;
+    background-color: #fccfd8;
+  }
+  .flex2:hover
+  {
+    transition: 0.5s all;
+    background-color: #b9e5f7;
+  }
+  .flex3:hover
+  {
+    transition: 0.5s all;
+    background-color: #eaf7b9;
   }
 
-  .main {
-    width: 100%;
+  .flex2
+  {
+    width: 400px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+  .flex3
+  {
+    width: 400px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+.flex-text1
+{
+  width: 300px;
+  text-align: center;
+  font-size:25px;
+  font-weight: 600;
+}
+.flex-text2
+{
+  width: 300px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+  color:grey;
+}
+.magnet {
+  transition: transform .3s ease;
+}
+@media screen and (max-width:1024px) {
+.six{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0;
+}
+.flex2
+{
+  margin: 20px 0;
+}
 
-  } */
+}
+
+@media screen and (max-width:768px) {
+  
   .button-56 {
     padding: 0 40px;
   }
@@ -1002,12 +1101,16 @@ overflow: hidden;
   .cos5
   {
     width: 40px;
-    left: 20rem;
+    left: 19rem;
   }
   .cos6{
     width: 40px;
     left: 16rem;
     top: 13rem;
+  }
+  .flex-text1
+  {
+    font-size: 20px;
   }
 }
 
@@ -1162,7 +1265,7 @@ overflow: hidden;
   .cos5
   {
     width: 40px;
-    left: 20rem;
+    left: 19rem;
   }
   .cos6{
     width: 40px;

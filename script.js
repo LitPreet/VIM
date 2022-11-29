@@ -5,27 +5,40 @@ const cursor = document.querySelector(".cursor");
 const navBag = document.querySelector(".nav-bag");
 const hammburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".nav-ul");
-const navItem = document.querySelectorAll(".nav-item")
+const navItem = document.querySelectorAll(".nav-ul li")
 const navLogo = document.querySelector(".nav-logo");
 const heading = document.querySelector(".h1");
 const heading2 = document.querySelector(".h2");
 const fenty = document.querySelector(".fenty");
-const Locoscroll = new LocomotiveScroll({
-    el:document.querySelector("[data-scroll-container]"),
-    smooth:true,
-    smartphone:{
-     smooth:true
-    }
- });
+const btns = document.querySelectorAll(".btn");
+const hand = document.querySelectorAll(".hand1");
+// const Locoscroll = new LocomotiveScroll({
+//     el:document.querySelector("[data-scroll-container]"),
+//     smooth:true,
+//     smartphone:{
+//      smooth:false
+//     }
+//  });
 
- const parallax = document.getElementById("parallax");
+
+let mm = new MagnetMouse({
+    magnet: {
+      element: '.magnet'
+    }
+  });
+  
+  mm.init();
+
+
+//  const parallax = document.getElementById("parallax");
 
 // Parallax Effect for DIV 1
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * 0.8 + "px";
+// window.addEventListener("scroll", function () {
+//   let offset = window.pageYOffset;
+//   parallax.style.backgroundPositionY = offset * 0.8 + "px";
 //   DIV 1 background will move slower than other elements on scroll.
-});
+// });
+
 
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
@@ -83,3 +96,4 @@ hammburger.addEventListener("click",(e)=>{
     navmenu.classList.toggle("active");
     document.body.classList.toggle('fixed-position');
 })
+
