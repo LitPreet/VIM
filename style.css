@@ -130,6 +130,7 @@ header {
   text-align: center;
   margin-bottom: 0;
   cursor: pointer;
+  width: fit-content;
 }
 
 .h2 {
@@ -138,6 +139,7 @@ header {
   color: #fff;
   text-align: center;
   cursor: pointer;
+  width: fit-content;
 }
 .ml13 {
   font-size: 55px;
@@ -148,7 +150,13 @@ header {
   display: inline-block;
   line-height: 1em;
 }
-
+.heading
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .black {
   background-color: #060606;
 }
