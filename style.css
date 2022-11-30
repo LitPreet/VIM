@@ -123,9 +123,8 @@ header {
   background-color: white;
 }
 
-.h1 {
+.h1  {
   margin-top: 12rem;
-  font-size: 55px;
   font-weight: 500;
   color: #fff;
   text-align: center;
@@ -136,11 +135,18 @@ header {
 .h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
   color: #fff;
-  font-size: 55px;
   text-align: center;
   cursor: pointer;
+}
+.ml13 {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .black {
@@ -847,6 +853,10 @@ margin-top: 7rem;
   color: #000;
   font-size: 25px; 
 }
+.flex2
+{
+  margin: 20px 0;
+}
 @media screen and (max-width:1024px) {
 .six{
   display: flex;
@@ -855,12 +865,9 @@ margin-top: 7rem;
   width: 100vw;
   padding: 0;
 }
-.flex2
-{
-  margin: 20px 0;
-}
 
 }
+
 
 @media screen and (max-width:768px) {
   
