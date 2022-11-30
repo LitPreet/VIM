@@ -1253,8 +1253,9 @@ font-size: 10px;
   }
   
   .foot{
+    background-image: url(./img/footer-mob.webp);
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
       }
       .email
       {
