@@ -652,7 +652,6 @@ overflow: hidden;
 
   .six
   {
-    /* background-color: #f9b8d7; */
     width: 100vw;
     display: flex;
     height: 30rem;
@@ -734,6 +733,119 @@ overflow: hidden;
 }
 .magnet {
   transition: transform .3s ease;
+}
+footer{
+background-image: url(./img/footer.webp);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 7rem;
+}
+.sub-text
+{
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.sub-text1
+{
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 0;
+}
+.email
+{
+  border: none;
+  width: 580px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 0;
+  outline: none;
+  background-color: #e6f2ff;
+  padding-left: 50px;
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+::placeholder {
+  color: #0084ff;
+  opacity: 1; 
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.subscribe
+{
+  border: none;
+  width: 620px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: #0084ff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #0084ff;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: rgb(19, 5, 12);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px; 
 }
 @media screen and (max-width:1024px) {
 .six{
@@ -934,6 +1046,21 @@ overflow: hidden;
   {
     left: 23rem;
   }
+  .six{
+    height: 70rem;
+  }
+  .foot{
+object-fit: contain;
+height: 80vh;
+  }
+  .email
+  {
+    width: 400px;
+  }
+  .btn
+  {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width:414px) {
@@ -1112,6 +1239,36 @@ overflow: hidden;
   {
     font-size: 20px;
   }
+  .sub-text
+  {
+    font-size: 25px;
+  }
+  .sub-text1
+  {
+    font-size: 25px;
+  }
+  ::placeholder
+  {
+font-size: 10px;
+  }
+  
+  .foot{
+    object-fit: cover;
+    height: 80vh;
+      }
+      .email
+      {
+        width: 200px;
+        padding-left: 10px;
+        height: 40px;
+        font-size: 12px;
+      }
+      .btn
+      {
+        width: 100px;
+        padding: 10px 10px;
+        font-size: 10px;
+      }
 }
 
 
