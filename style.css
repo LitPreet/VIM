@@ -825,12 +825,12 @@ margin-top: 7rem;
   left: 0;
   top: 0;
   height: 490%;
-  width: 140%;
+  width: 150%;
   background: rgb(19, 5, 12);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-67%) translateY(-25%) rotate(45deg);
 }
 
 .btn:hover:after {
@@ -1253,7 +1253,7 @@ font-size: 10px;
   }
   
   .foot{
-    object-fit: cover;
+    background-size: cover;
     height: 80vh;
       }
       .email
@@ -1268,6 +1268,11 @@ font-size: 10px;
         width: 120px;
         padding: 10px 10px;
         font-size: 10px;
+      }
+      .btn:after
+      {
+        -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        transform: translateX(-85%) translateY(-25%) rotate(45deg);
       }
 }
 
