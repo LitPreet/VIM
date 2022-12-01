@@ -12,6 +12,7 @@ const heading2 = document.querySelector(".h2");
 const fenty = document.querySelector(".fenty");
 const btns = document.querySelectorAll(".btn");
 const hand = document.querySelectorAll(".hand1");
+
 // const Locoscroll = new LocomotiveScroll({
 //     el:document.querySelector("[data-scroll-container]"),
 //     smooth:true,
@@ -101,7 +102,6 @@ navItem.forEach(box => {
      cursor.classList.remove("hover");
     });
   });
-
 
 
 

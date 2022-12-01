@@ -1290,6 +1290,12 @@ font-size: 10px;
         -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
         transform: translateX(-85%) translateY(-25%) rotate(45deg);
       }
+    
+      .about,.about2
+      {
+        font-size: 28px;
+        text-align: center;
+      }
 }
 
 
