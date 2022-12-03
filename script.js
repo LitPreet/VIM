@@ -21,6 +21,17 @@ const hand = document.querySelectorAll(".hand1");
 //     }
 //  });
 
+hammburger.addEventListener("click",(e)=>{
+  hammburger.classList.toggle("active");
+  console.log("hii")
+  navBar.classList.toggle("black")
+  header.classList.toggle("black")
+  navmenu.classList.toggle("active");
+  document.body.classList.toggle('fixed-position');
+})
+
+
+
 // Wrap every letter in a span
 var textWrapper = document.querySelectorAll('.ml13');
 textWrapper.forEach(text=>{
@@ -103,13 +114,4 @@ navItem.forEach(box => {
     });
   });
 
-
-
-hammburger.addEventListener("click",(e)=>{
-    hammburger.classList.toggle("active");
-    navBar.classList.toggle("black")
-    header.classList.toggle("black")
-    navmenu.classList.toggle("active");
-    document.body.classList.toggle('fixed-position');
-})
 

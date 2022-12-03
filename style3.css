@@ -1,0 +1,86 @@
+.main3
+{
+    background-image: url(./img/about.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.hover3{
+    transform: scale(15);
+    /* background-color: #ff1493; */
+    background-color: rgb(12, 6, 9);
+    mix-blend-mode: color-burn;
+    transition: 0.2s ease;
+    transform-origin: center;
+   
+  }
+  .heading3
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .About
+  {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 70px;
+  }
+  
+  /* circle animation 
+   */
+   
+#layer{
+    -webkit-animation: spin 15s linear infinite;
+    -moz-animation: spin 15s linear infinite;
+    -o-animation: spin 15s linear infinite;
+    animation: spin 15s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-o-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @media (max-width:414px) {
+    .About
+    {
+        font-size: 29px;
+    }
+  }
+  
