@@ -54,6 +54,26 @@ navItem.forEach(box => {
   });
 
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function(){
+    
+    let currentScroll = window.pageYOffset;
+    
+    if (prevScrollpos > currentScroll) {
+      navBar.style.top = "0";
+      navBar.classList.add("back-filter");
+    } 
+    if (prevScrollpos < currentScroll){
+      navBar.style.top = "-80px";
+      navBar.classList.remove("back-filter");
+    }
+    if(currentScroll == 0)
+    {
+      navBar.classList.remove("back-filter");
+    }
+    
+    prevScrollpos = currentScroll;
+  }
   hammburger.addEventListener("click",(e)=>{
     hammburger.classList.toggle("active");
     navBar.classList.toggle("black")

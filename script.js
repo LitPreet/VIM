@@ -13,6 +13,7 @@ const fenty = document.querySelector(".fenty");
 const btns = document.querySelectorAll(".btn");
 const hand = document.querySelectorAll(".hand1");
 
+
 // const Locoscroll = new LocomotiveScroll({
 //     el:document.querySelector("[data-scroll-container]"),
 //     smooth:true,
@@ -20,15 +21,38 @@ const hand = document.querySelectorAll(".hand1");
 //      smooth:false
 //     }
 //  });
-
-hammburger.addEventListener("click",(e)=>{
+hammburger.addEventListener("click",()=>{
   hammburger.classList.toggle("active");
-  console.log("hii")
-  navBar.classList.toggle("black")
+  // navBar.classList.toggle("black")
   header.classList.toggle("black")
   navmenu.classList.toggle("active");
   document.body.classList.toggle('fixed-position');
 })
+
+//fixed header on scroll
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function(){
+  
+  let currentScroll = window.pageYOffset;
+  
+  if (prevScrollpos > currentScroll) {
+    navBar.style.top = "0";
+    navBar.classList.add("back-filter");
+  } 
+  if (prevScrollpos < currentScroll){
+    navBar.style.top = "-80px";
+    navBar.classList.remove("back-filter");
+  }
+  if(currentScroll == 0)
+  {
+    navBar.classList.remove("back-filter");
+  }
+  
+  prevScrollpos = currentScroll;
+}
+
+
 
 
 
@@ -73,7 +97,7 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px';
 })
 navLogo.addEventListener("mouseenter", (e) => {
-    cursor.classList.add("hover")
+    cursor.classList.add("hover");
 })
 navLogo.addEventListener("mouseleave", (e) => {
     cursor.classList.remove("hover")
