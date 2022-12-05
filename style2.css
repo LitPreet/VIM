@@ -270,7 +270,10 @@
       border-radius: 50%;
     }
   }
-  
+  .fixed-position
+  {
+    overflow: hidden;
+  }
   
 
   /* circle animation 
