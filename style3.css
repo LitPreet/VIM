@@ -24,7 +24,7 @@
   {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   .About
   {
@@ -81,6 +81,13 @@
       transform: rotate(360deg);
     }
   }
+  @media  (min-width:480px) and (max-width: 768px) {
+    .About
+    {
+      font-size: 50px;
+    }
+    
+  }
   @media (max-width:414px) {
     .About
     {
@@ -88,3 +95,19 @@
     }
   }
   
+  @media (min-width:320px) and (max-width:414px) {
+    .heading3
+    {
+      margin-top: 8rem;
+    }
+  }
+  @media  (min-width:415px) and (max-width:479px) {
+    .About
+    {
+      font-size: 40px;
+    }
+    .heading3
+    {
+      margin-top: 7rem;
+    }
+  }
