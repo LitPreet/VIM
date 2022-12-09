@@ -120,8 +120,6 @@ anime.timeline({loop: false})
       duration:3,
       scrollTrigger: {
           trigger: ".review2",
-          // start : "top 80%",
-          // end: "top 30%",
           scrub: true,
           toggleActions: "restart none none none",
          

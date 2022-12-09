@@ -29,30 +29,6 @@ hammburger.addEventListener("click",()=>{
     document.body.classList.toggle('fixed-position');
   })
   
-  //fixed header on scroll
-  
-  // var prevScrollpos = window.pageYOffset;
-  // window.onscroll = function(){
-    
-  //   let currentScroll = window.pageYOffset;
-    
-  //   if (prevScrollpos > currentScroll) {
-  //     navBar.style.top = "0";
-  //     navBar.classList.add("back-filter");
-  //   } 
-  //   if (prevScrollpos < currentScroll){
-  //     navBar.style.top = "-80px";
-  //     navBar.classList.remove("back-filter");
-  //   }
-  //   if(currentScroll == 0)
-  //   {
-  //     navBar.classList.remove("back-filter");
-  //   }
-    
-  //   prevScrollpos = currentScroll;
-  // }
-  
-  
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
@@ -117,8 +93,7 @@ navItem.forEach(box => {
       duration:3,
       scrollTrigger: {
           trigger: ".review2",
-          // start : "top 80%",
-          // end: "top 30%",
+       
           scrub: true,
           toggleActions: "restart none none none",
          
