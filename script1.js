@@ -100,3 +100,30 @@ anime.timeline({loop: false})
   })
 
   
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".review1",{
+      x: 130,
+      duration:3,
+      start: "",
+      stop: "top",
+      scrollTrigger: {
+          trigger: ".review2",
+          
+          scrub: true,
+          toggleActions: "restart none none none",
+          
+      },
+     
+  })
+  gsap.to(".review2",{
+      x: -130,
+      duration:3,
+      scrollTrigger: {
+          trigger: ".review2",
+          // start : "top 80%",
+          // end: "top 30%",
+          scrub: true,
+          toggleActions: "restart none none none",
+         
+      }
+  }) 

@@ -11,6 +11,36 @@
 {
   overflow: hidden;
 }
+
+.flex-p{
+  display: flex;
+  /* background-color: #a9abac; */
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cos1{
+  width: 73px;
+}
+.flex-p1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1c6082; */
+  position: absolute;
+  width: 50%;
+  margin-top: 22rem;
+}
+.flex-p2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1c6082; */
+  position: absolute;
+  width: 50%;
+  margin-bottom: 22rem;
+}
 .hover3{
     transform: scale(15);
     /* background-color: #ff1493; */
@@ -81,12 +111,101 @@
       transform: rotate(360deg);
     }
   }
+
+  @media (min-width:769px) and (max-width:1024px) {
+    
+.cos1{
+  width: 70px;
+}
+.flex-p1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1c6082; */
+  position: absolute;
+  width: 50%;
+  margin-top: 22rem;
+}
+.flex-p2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #1c6082; */
+  position: absolute;
+  width: 50%;
+  margin-bottom: 22rem;
+}
+  }
   @media  (min-width:480px) and (max-width: 768px) {
     .About
     {
       font-size: 50px;
     }
     
+  .flex-p{
+    display: flex;
+    /* background-color: #a9abac; */
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cos1{
+    width: 65px;
+  }
+  .flex-p1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 50%;
+    margin-top: 22rem;
+  }
+  .flex-p2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 50%;
+    margin-bottom: 22rem;
+  }
+    
+  }
+  @media (min-width:480px) and (max-width: 657px){
+    .cos1{
+      width: 55px;
+    }
+    .flex-p1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: #1c6082; */
+      position: absolute;
+      width: 60%;
+      margin-top: 16rem;
+    }
+    .flex-p2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: #1c6082; */
+      position: absolute;
+      width: 60%;
+      margin-bottom: 16rem;
+    }
+    .flex-p{
+      display: flex;
+      /* background-color: #a9abac; */
+      position: absolute;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .f1,.f2{
+      font-size: 30px;
+    }
   }
   @media (max-width:414px) {
     .About
@@ -95,12 +214,7 @@
     }
   }
   
-  @media (min-width:320px) and (max-width:414px) {
-    .heading3
-    {
-      margin-top: 8rem;
-    }
-  }
+ 
   @media  (min-width:415px) and (max-width:479px) {
     .About
     {
@@ -110,4 +224,57 @@
     {
       margin-top: 7rem;
     }
+    
+  .cos1{
+    width: 40px;
+  }
+  .flex-p1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 50%;
+    margin-top: 10rem;
+  }
+  .flex-p2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 50%;
+    margin-bottom: 10rem;
+  }
+  }
+  @media (min-width:320px) and (max-width:414px) {
+    .heading3
+    {
+      margin-top: 8rem;
+    }
+    
+  .cos1{
+    width: 40px;
+  }
+  .flex-p1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 60%;
+    margin-top: 10rem;
+  }
+  .flex-p2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #1c6082; */
+    position: absolute;
+    width: 60%;
+    margin-bottom: 10rem;
+  }
+  .flex-p{
+    width: 90%;
+  }
   }
