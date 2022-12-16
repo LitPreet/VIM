@@ -992,6 +992,11 @@ position: fixed;
     to { transform: scale(17); }
   }
   
+  .love{
+    margin-top: 100px;
+    color: rgb(28, 27, 27);
+    font-size: 20px;
+  }
 
 /* scroller  */
 .scroller
@@ -2044,12 +2049,17 @@ font-size: 10px;
   {
   height: 120px;
   }
+  .love{
+    font-size: 15px;
+  }
   
  }
  
 @media (min-width:320px) and (max-width:414px) {
 
-
+.love{
+  font-size: 15px;
+}
   .hamburger {
     display: block;
     cursor: pointer;
