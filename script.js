@@ -3,6 +3,7 @@ const header = document.querySelector("header");
 const navBar = document.querySelector(".navbar");
 const cursor = document.querySelector(".cursor");
 const navBag = document.querySelector(".nav-bag");
+const cartBox = document.querySelector(".cart-box");
 const hammburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".nav-ul");
 const navItem = document.querySelectorAll(".nav-ul li")
@@ -156,4 +157,6 @@ navItem.forEach(box => {
       }
   })
   
-  
+  navBag.addEventListener("click",()=>{
+    cartBox.classList.toggle("enter");
+  })

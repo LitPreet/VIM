@@ -1,0 +1,267 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yeseva+One&display=swap";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+    
+}
+body {
+
+  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Oxygen, Open Sans, Helvetica Neue;
+}
+.full{
+    width: 100%;
+   
+}
+.full-text{
+    font-size: 50px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.cart-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: 30px 20px;
+    flex-direction: column;
+   color: white;
+  }
+  .productdetail{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    background-color: rgb(8, 1, 7);
+    border-radius: 50px;
+    margin: 10px 0;
+  }
+  .trash{
+    font-size: 50px;
+    color: red;
+  }
+ 
+  .img10 img{
+    border-radius: 7px;
+    width: 120px;
+    margin: 10px 0;
+  }
+  .product-name{
+    margin: 0;
+  }
+ .baskettotaltitle{
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+  
+  .quantity-p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .delete-btn{
+    cursor: pointer;
+    border: none;
+  }
+  .detail10{
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 10px;
+  margin-left: 20px;
+  
+  }
+  .plus-min2{
+    display: flex;
+  }
+  .total10{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+   .cart-ham span{
+    font-size:40px;
+   }
+   .deletecontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* margin-top: 20px; */
+    flex-direction: column;
+    align-items: center;
+   }
+   .deletecontainer p{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+   }
+   @media (min-width:769px) and (max-width:1100px){
+    .productdetail{
+      width: 600px;
+      border-radius: 10px;
+    }
+    .img10 img{
+      width: 100px;
+    }
+    .detail10{
+font-size: 15px;
+    }
+    .total10{
+font-size: 15px;
+    }
+    .baskettotaltitle{
+        font-size: 15px;
+       }
+       
+   }
+
+   @media (min-width: 660px) and (max-width:768px)
+   {
+    .full-text{
+      font-size: 30px;
+    }
+    .deletecontainer p{
+      font-size: 18px;
+    }
+    .productdetail{
+      width: 600px;
+      border-radius: 10px;
+    }
+    .img10 img{
+      width: 100px;
+    }
+    .detail10{
+font-size: 15px;
+    }
+    .total10{
+font-size: 15px;
+    }
+    .baskettotaltitle{
+        font-size: 15px;
+       }
+       .cart-ham span{
+        font-size: 10px;
+       }
+       .trash{
+        font-size: 40px;
+       }
+      
+   }
+   @media (min-width: 480px) and (max-width:660px)
+   {
+    .full-text{
+      font-size: 25px;
+    }
+    .deletecontainer p{
+      font-size: 18px;
+    }
+    .productdetail{
+      width: 450px;
+      border-radius: 10px;
+    }
+    .img10 img{
+      width: 80px;
+      margin-left: 10px;
+    }
+    .detail10{
+font-size: 13px;
+    }
+    .total10{
+font-size: 13px;
+    }
+    .baskettotaltitle{
+        font-size: 12px;
+
+       }
+       .cart-ham span{
+        font-size: 10px;
+       }
+       .trash{
+        font-size: 35px;
+       }
+   }
+   @media (min-width: 414px) and (max-width:480px)
+   {
+    .full-text{
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .deletecontainer p{
+      font-size: 12px;
+    }
+    .productdetail{
+      width: 380px;
+      border-radius: 10px;
+    }
+    .img10 img{
+      width: 80px;
+      margin-left: 10px;
+    }
+    .detail10{
+font-size: 12px;
+    }
+    .total10{
+font-size: 13px;
+    }
+    .baskettotaltitle{
+        font-size: 12px;
+       }
+       .cart-ham span{
+        font-size: 10px;
+       }
+       .trash{
+        font-size: 35px;
+       }
+   }
+   @media (min-width:320px) and (max-width:416px) {
+    .full-text{
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .deletecontainer p{
+      font-size: 12px;
+    }
+    .productdetail{
+      width: 300px;
+      border-radius: 10px;
+    }
+    .img10 img{
+      width: 60px;
+      margin-left: 10px;
+    }
+    .detail10{
+font-size: 10px;
+    }
+    .total10{
+font-size: 10px;
+    }
+    .baskettotaltitle{
+        font-size: 10px;
+       }
+       .cart-ham span{
+        font-size: 10px;
+       }
+       .trash{
+        font-size: 35px;
+       }
+   }
