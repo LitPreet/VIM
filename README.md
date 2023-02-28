@@ -4,7 +4,7 @@
 This project is a fully functional website which comes with add to cart features.
 
 where you can explore the amazing cosmetics products.  
-I have added one of the amazing animation.
+I have tried some amazing animation.
 
 <a href = "https://vimcosmo.netlify.app/">Live Demo</a>
 
