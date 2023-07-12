@@ -1,5 +1,5 @@
 # VIM
-<img width="960" alt="Screenshot 2022-12-16 135347" src="https://user-images.githubusercontent.com/77205201/208055485-61b58dad-f6b0-4257-a63c-a0082c1d8440.png">
+<img width="947" alt="img1" src="https://github.com/LitPreet/VIM/assets/77205201/d20dba35-c6a5-4a1e-b951-4118529c1ac9">
 
 This project is a fully functional website which comes with add to cart features.
 
